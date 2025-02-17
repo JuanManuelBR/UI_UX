@@ -1,0 +1,352 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #13c4a6;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+}
+
+section {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff4500;
+}
+
+/* Recuadro para transcripción debajo del video */
+.transcription-box {
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transcription-box h4 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.transcription-box p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos de las flechas y contenedor de imagen */
+/* Estilos de las flechas y contenedor de imagen */
+.evolution-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #13c4a6;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.arrow:hover {
+    background-color: #ff4500;
+    color: white;
+}
+
+/* Alineación de las flechas */
+.arrow.left {
+    left: 50px; /* Mueve la flecha izquierda hacia la izquierda */
+}
+
+.arrow.right {
+    right: 50px; /* Mueve la flecha derecha hacia la derecha */
+}
+
+/* Asegura que la imagen no se desplace */
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+footer {
+    background-color: #13c4a6;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #000;
+    font-size: 1em;
+}
+
+.form-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#textContainer p {
+    font-size: 16px;  /* Tamaño de texto inicial */
+    line-height: 1.6;  /* Espaciado entre letras inicial */
+    transition: font-size 0.3s ease, letter-spacing 0.3s ease; /* Para una transición suave */
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    padding: 10px;
+    margin: 5px;
+    background-color: #13c4a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    background-color: #ff4500;
+}
+
+.range-input {
+    width: 200px;
+    margin: 10px;
+}
+
+
+#textContainer p, #textContainer h2 {
+    transition: font-size 0.3s ease;
+}
+
+#textContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Nose{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.enviar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+/* Estilos Responsivos */
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .evolution-container {
+        flex-direction: column;
+    }
+
+    .arrow {
+        font-size: 1.5em;
+        padding: 8px;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .transcription-box {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .transcription-box h4 {
+        font-size: 1.3em;
+    }
+
+    .transcription-box p {
+        font-size: 1em;
+    }
+}
+
+/* Dispositivos medianos (tablets) */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .evolution-container {
+        gap: 15px;
+    }
+
+    img {
+        width: 180px;
+    }
+
+    .arrow {
+        font-size: 1.8em;
+        padding: 9px;
+    }
+}
+
+/* Dispositivos grandes (escritorio) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .evolution-container {
+        gap: 30px;
+    }
+
+    img {
+        width: 220px;
+    }
+
+    .arrow {
+        font-size: 2.5em;
+        padding: 12px;
+    }
+
+    .transcription-box {
+        max-width: 700px;
+    }
+}

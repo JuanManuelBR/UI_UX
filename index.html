@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web sobre Pokémon">
+    <title id="textContainer">Pokémon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos al Mundo Pokémon</h1>
+        <nav>
+            <ul>
+                <div class="controls">
+                    <!-- 1.4.4 Permitir cambio de tamaño del texto -->
+                    <label id="textContainer" for="fontSizeRange">Modificar tamaño del Texto</label>
+                    <input type="range" id="fontSizeRange" class="range-input" min="16" max="40" value="16" onchange="changeFontSize(this.value)">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="bulbasaur">
+        <!-- 1.2.2 Proporcionar subtítulos para contenido multimedia -->
+        <!-- Video promocional de Pokemon TCGP -->
+        <h2 id="textContainer">¡Te presentamos el nuevo juego Pokemon TCGP! </h2>
+        <div class="video-container" id="textContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G43N-89wYUE?si=cV5nOqdiyenQpgyO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- 1.2.3 Proporcionar una transcripción del video -->
+        <!-- Recuadro para transcripción -->
+        <div class="transcription-box" id="textContainer">
+            <h3 id="textContainer">Descargar transcripción del video en .pdf</h3>
+            <p id="textContainer"><a href="https://drive.google.com/file/d/1cYx4bBGD47lxBncD7SttTXs21d8Lq1yC/view?usp=sharing" >Transcripción del video </a></p>
+        </div>
+    </section>
+
+    <section id="">
+        <h2 id="textContainer">Bulbasaur</h2>
+        <div class="evolution-container textContainer">
+            <button aria-label="Anterior imagen" class="arrow left" type="submit" onclick="showEvolution('bulbasaur', -1)">&#8592;</button>
+            <!-- 1.1.1 Proporcionar texto alternativo para imágenes -->
+            <img id="bulbasaur-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Primera fase evolutiva del pokemon, Bulbasaur">
+            <button aria-label="Siguiente imagen" class="arrow right" onclick="showEvolution('bulbasaur', 1)">&#8594;</button>
+        </div>
+        <p id="textContainer">Bulbasaur es un Pokémon de tipo planta/veneno. Es conocido por la planta que crece en su espalda, la cual florece con el tiempo.</p>
+    </section>
+    
+    <section id="charmander">
+        <h2 id="textContainer">Charmander</h2>
+        <div class="evolution-container textContainer">
+            <button aria-label="Anterior imagen" class="arrow left" onclick="showEvolution('charmander', -1)">&#8592;</button>
+            <img id="charmander-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="Primera fase evolutiva del pokemon, Charmander">
+            <button aria-label="Siguiente imagen" class="arrow right" onclick="showEvolution('charmander', 1)">&#8594;</button>
+        </div>
+        <p id="textContainer">Charmander es un Pokémon de tipo fuego. Tiene una llama en la punta de su cola que indica su salud y estado emocional.</p>
+    </section>
+    
+    <section id="squirtle">
+        <h2 id="textContainer">Squirtle</h2>
+        <div class="evolution-container textContainer">
+            <button aria-label="Anterior imagen" class="arrow left" onclick="showEvolution('squirtle', -1)">&#8592;</button>
+            <img id="squirtle-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" alt="Primera fase evolutiva del pokemon, Squirtle">
+            <button aria-label="Siguiente imagen" class="arrow right" onclick="showEvolution('squirtle', 1)">&#8594;</button>
+        </div>
+        <p id="textContainer">Squirtle es un Pokémon de tipo agua. Es conocido por su habilidad para disparar agua a alta presión desde su boca.</p>
+    </section>
+    
+    <section class="Nose">
+        <div id="textContainer" class="form-container textContainer">
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post">
+                <!-- 1.3.1 Asegurar estructura semántica adecuada en formularios -->
+                <div id="textContainer" class="input-group">
+                    <label id="textContainer" for="nombre">Nombres</label>
+                    <input id="textContainer" type="text" id="nombre" name="nombre" value="Juleta" required>
+                </div>
+                <div id="textContainer" class="input-group">
+                    <label id="textContainer" for="apellido">Apellidos</label>
+                    <input id="textContainer" type="text" id="apellido" name="apellido" value="Avila" required>
+                </div>
+                <div id="textContainer" class="input-group">
+                    <label id="textContainer" for="telefono">Teléfono</label>
+                    <input id="textContainer" type="text" id="telefono" name="telefono" value="4567890" pattern="[0-9]" required>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p id="textContainer">&copy; 2025 Pokémon World. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
